@@ -15,11 +15,18 @@ overflow-x: scroll;
     height: -webkit-fill-available;
     width: -webkit-fill-available;
 }
+a{
+    background-color:#f8edba ;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    font-family: math;
+    text-decoration: none;
+}
 ul{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-
 }
 nav{
     background-color: antiquewhite;
@@ -27,8 +34,16 @@ nav{
     padding: 8px;
     position: fixed;
     width: 100%;
-}
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 
+}
+#button{
+
+    background-color: #b4b865;
+    border-radius: 8px;
+}
 
 body {
     font-family: Arial, sans-serif;

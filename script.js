@@ -8,26 +8,8 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     })
     .then(data => {
       
-        // let header=document.getElementById("header")
 
-        // let h1=document.createElement("h1")
-        
-        // let produits=document.getElementById("projet-container")
-       
-        // produits.appendChild(divproduit)
-        // let divproduit=document.createElement("div")
-        // let divcont=document.createElement("div")
-        // divproduit.appendChild(divcont)
-        // 
-        // divproduit.appendChild(img)
 
-      
-
-        // let h2=document.createElement("h2")
-        // divcont.appendChild(h2)
-
-        // let pproduits=document.createElement("p")
-        // divcont.appendChild(pproduits)
         let header = document.getElementById("header");
         let titre = document.createElement("h1");
         titre.textContent=data.nomCommercial;
@@ -37,9 +19,9 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         sousTitre.textContent=data.phraseAccroche;
         header.appendChild(sousTitre);
 
-        let boutonHeader=document.createElement("button");
-        boutonHeader.textContent=data.texteAppelAction;
-        header.appendChild(boutonHeader);
+        // let boutonHeader=document.createElement("button");                       ERROR
+        // boutonHeader.textContent=data.texteAppelAction;
+        // header.appendChild(boutonHeader);
 
         let sectionClient=document.getElementById("avantage-clients");
 
@@ -67,7 +49,25 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     ProjetContainer.appendChild(ContainerProduit);
 
 
+// });
+// data.services.forEach(element => {                                            ERROR
+    
+    
+//     let Services= document.createElement("p");
+//     let ServicesNom=document.createElement("div");
+//     ServicesNom.textContent= element.nom;
+    
+//     let servicesDescription = document.createElement("div");
+//     servicesDescription.textContent=element.description;
+
+
+//     servicesDescription.appendChild(Services);
+//     Services.appendChild(ServicesNom);
+//     Services.appendChild(servicesDescription);
+
 });
+
+
     data.temoignages.forEach(element => {
         
         let ContainerProduit = document.createElement("div");
@@ -95,23 +95,6 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
 
         
-    //     let h3=document.createElement("h3")
-    //     let section=document.createElement("section" )
-    //     let p=document.createElement("p")
-    //     let div=document.createElement("div")
-
-    
-
-    //     h1.textContent=data.phraseAccroche;
-    //     h2.textContent=data.texteAppelAction
-     
-
-    //    const projectsContainer=document.getElementById("projects-container");
-       
-
-    //    console.log(data.nomCommercial);
-    //    console.log(data.produits[0].nom);
-       
     })
     .catch(error => console.error('Error:', error));
 
